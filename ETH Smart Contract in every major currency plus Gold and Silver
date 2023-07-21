@@ -1,0 +1,21 @@
+//Get funds from users globally 
+// Withdraw funds globally 
+//Set a minimum funding value in USD, GBP, JPY, EUR, AUD, CAD, NZD, CHF, HKD, ZAR, XAU = Gold, Sil = Silver
+//Unlimited Withdraw Maximuum in value in USD, GBP, JPY, EUR, AUD, CAD, NZD, CHF, HKD, ZAR, XAU = Gold, Sil = Silver
+
+// SPDX-License-Identifer: MIT
+
+pragma solidity  ^0.8.19;
+
+contract FundMe {
+
+    function fund() public payable {}
+
+    function withdraw() public {}
+    // Allow user to send money $
+    // Have a minimum $ sent 
+    // How do we send ETH to this contract?
+    require(msg.value > 1e18, "didn't send enough ETH"); // 1e18 = 1 ETH + 100000000000 = 1*10 ** 18
+
+
+    //function withdraw public {}
